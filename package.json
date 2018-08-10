@@ -5,16 +5,22 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --config ./webpack.config.js --mode development",
-    "test": "echo \"No test specified\" && exit 0"
+    "test": "jest --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.26.3",
+    "babel-jest": "^23.4.2",
     "babel-loader": "^7.1.5",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
+    "enzyme": "^3.4.1",
+    "enzyme-adapter-react-16": "^1.2.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^22.4.3",
+    "jest-enzyme": "^6.0.3",
     "react-hot-loader": "^4.3.3",
     "webpack": "^4.15.1",
     "webpack-cli": "^3.0.8",
