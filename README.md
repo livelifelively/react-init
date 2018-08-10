@@ -12,7 +12,7 @@ Based on https://github.com/rwieruch/minimal-react-webpack-babel-setup
 
 ## Installation
 
-* `git clone git@github.com:livelifelively/reactInit.git
+* git clone git@github.com:livelifelively/reactInit.git
 * cd reactInit
 * npm install
 * npm start
