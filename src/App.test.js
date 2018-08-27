@@ -9,5 +9,5 @@ Enzyme.configure({
 
 test('renders without error', () => {
   const wrapper = shallow(<App />);
-  expect(wrapper).toBeTruthy();
+  expect(wrapper.length).toBe(1);
 });
