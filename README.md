@@ -1,4 +1,4 @@
-# React Starter Package
+# ReactInit
 
 Based on https://github.com/rwieruch/minimal-react-webpack-babel-setup
 
@@ -9,11 +9,14 @@ Based on https://github.com/rwieruch/minimal-react-webpack-babel-setup
 * Babel
 * Staging ES Next Features
 * Hot Module Replacement
+* Jest
+* Enzyme
 
 ## Installation
 
-* git clone git@github.com:livelifelively/reactInit.git
-* cd reactInit
-* npm install
-* npm start
+* `git clone git@github.com:livelifelively/reactInit.git`
+* `cd reactInit`
+* `npm install`
+* `npm start`
 * visit `http://localhost:8080/`
+* `npm test` to run test
