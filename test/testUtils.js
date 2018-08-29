@@ -9,7 +9,7 @@ export const findByDataTestAttr = (wrapper, attr) => {
 };
 
 /**
- *
+ * @function checkProps - check if the component propTypes are same as passed properties
  * @param {ShallowWraper} component
  * @param {object} confirmingProps
  */
