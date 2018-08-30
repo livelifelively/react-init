@@ -37,7 +37,7 @@ class Counter extends Component {
     return (
       <div data-test="component-counter">
         <h1 data-test="counter-display">Counter value is {this.state.counter}</h1>
-        {this.state.error.length && <h2 data-test="counter-error">{this.state.error}</h2> }
+        { this.state.error.length > 0 && <h2 data-test="counter-error">{this.state.error}</h2> }
         <button data-test="counter-increment-button" onClick={() => this.increaseCounter()}>increase</button>
         <button data-test="counter-decrement-button" onClick={() => this.decreaseCounter()}>decrease</button>
       </div>
