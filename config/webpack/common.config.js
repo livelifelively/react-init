@@ -4,7 +4,7 @@ const webpack = require('webpack');
 
 module.exports = {
   resolve: {
-    extensions: ['*', '.js', '.jsx']
+    extensions: ['.ts', '.tsx', '.js', '.jsx']
   },
   context: resolve(__dirname, '../../src'),
   module: {

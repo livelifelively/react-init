@@ -5,5 +5,17 @@ module.exports = {
     "../__mocks__/fileMock.js",
       "\\.(css|less)$": "../__mocks__/styleMock.js"
   },
-  "testURL": "http://localhost:8080/"
+  transform: {
+    "^.+\\.tsx?$": "ts-jest"
+  },
+  testRegex: "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+  moduleFileExtensions: [
+    "ts",
+    "tsx",
+    "js",
+    "jsx",
+    "json",
+    "node"
+  ],
+  testURL: "http://localhost:8080/"
 }

@@ -1,11 +1,11 @@
 const merge = require('webpack-merge');
 const webpack = require('webpack');
-const commonConfig = require('./common');
+const commonConfig = require('./common.config');
 
 module.exports = merge(commonConfig, {
   mode: 'development',
   entry: [
-    './index.js' // the entry point of our app
+    './index.tsx' // the entry point of our app
   ],
   devServer: {
     contentBase: './dist',
