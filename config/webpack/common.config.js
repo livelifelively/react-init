@@ -1,8 +1,12 @@
+
+const {resolve} = require('path');
 const webpack = require('webpack');
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
-  entry: './src/index.js',
+  resolve: {
+    extensions: ['*', '.js', '.jsx']
+  },
+  context: resolve(__dirname, '../../src'),
   module: {
     rules: [
       {
@@ -25,20 +29,13 @@ module.exports = {
       }
     ]
   },
-  resolve: {
-    extensions: ['*', '.js', '.jsx']
-  },
+
   output: {
     path: __dirname + '/dist',
     publicPath: '/',
     filename: 'bundle.js'
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-    new BundleAnalyzerPlugin()
+
   ],
-  devServer: {
-    contentBase: './dist',
-    hot: true
-  }
 };
