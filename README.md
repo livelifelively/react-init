@@ -1,4 +1,6 @@
-# ReactInit
+# react-init
+
+My boilerplate for developing react applications.
 
 Based on https://github.com/rwieruch/minimal-react-webpack-babel-setup
 
