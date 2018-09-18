@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import * as React from 'react';
+import { Component } from 'react';
 import { Provider } from 'react-redux';
 
 import Counter from './components/counter/Counter';
@@ -13,7 +14,7 @@ class App extends Component {
         </div>
       </Provider>
     );
-  };
+  }
 }
 
 export default App;
